@@ -9,7 +9,11 @@ class App extends Component {
     return (
         <React.Fragment>
 	        <PortfolioFixed/>
-	        <PortfolioContent/>
+	        <PortfolioContent skillData = {this.props.skillData}  
+	        					eduData = {this.props.eduData}
+	        				   jobsData = {this.props.jobsData}
+
+	        />
         </React.Fragment>
     );
   }
